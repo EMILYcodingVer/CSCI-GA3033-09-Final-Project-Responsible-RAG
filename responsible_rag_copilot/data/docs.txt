@@ -1,0 +1,15 @@
+Responsible AI refers to the practice of building AI systems that are safe, fair, transparent, and accountable. A responsible AI system should avoid causing harm to users or society, and it should behave in a way that aligns with human values and legal regulations.
+
+A core principle of responsible AI is safety. Safety means that the system should not produce outputs that directly cause physical, psychological, financial, or social harm. For example, a chatbot should not give instructions for self-harm or facilitate criminal activity. Safety mechanisms often include content filters, red teaming, and continuous monitoring.
+
+Another important principle is fairness. Fairness requires that AI systems do not systematically disadvantage specific groups based on attributes such as gender, race, age, or nationality. Techniques to improve fairness include bias analysis on datasets, balanced training data, and post-processing methods that adjust model outputs to reduce disparate impact.
+
+Transparency and explainability are also key aspects of responsible AI. Transparency means that users and stakeholders can understand when and how AI is being used. Explainability refers to the ability to provide human-understandable reasons for model decisions, which is important for debugging, trust, and regulatory compliance.
+
+Accountability means that there are clear roles and processes to handle mistakes, complaints, and incidents caused by AI systems. Organizations should define who is responsible for monitoring AI behavior, responding to harmful outputs, and updating the system when problems are found. Documentation, incident reports, and governance frameworks help enforce accountability.
+
+Regulations such as the EU AI Act introduce risk-based categories for AI systems, including minimal risk, limited risk, high risk, and unacceptable risk. High-risk AI systems, such as those used in healthcare, employment, or critical infrastructure, must satisfy stricter requirements for data quality, transparency, human oversight, and robustness.
+
+Retrieval-augmented generation (RAG) is a technique that improves factual accuracy by combining a language model with a document retrieval component. Instead of generating answers purely from model parameters, the system first retrieves relevant documents from a knowledge base and then asks the model to generate an answer grounded in those documents. This reduces hallucinations and improves trustworthiness.
+
+Adding a critic or evaluator agent on top of RAG can further improve responsible AI. The critic agent reviews the draft answer, checks whether it is supported by the retrieved documents, and looks for safety or bias issues. When problems are found, the critic can either flag the answer for human review or trigger a revision step to generate a safer, more accurate response.
