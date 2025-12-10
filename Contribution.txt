@@ -1,0 +1,31 @@
+Haoran Li (hl5757): 
+
+Haoran Li was responsible for the design and implementation of the core AI pipeline, including:
+
+1. Building the RAG retrieval module, supporting multi-file corpus loading, chunking, embeddings, and similarity search.
+
+2. Implementing all agent components, including the Planner, Draft Generator, Critic, and Revision agents.
+
+3. Developing the Responsible RAG pipeline that integrates retrieval, reasoning, safety checking, and final answer generation.
+
+4. Creating evaluation and comparison tools such as compare_systems.py and related test scripts.
+
+5. Preparing the document corpus (PDF → text conversion and preprocessing).
+
+6. Designing the overall pipeline architecture and ensuring end-to-end integration.
+
+Lin Chen (lc5909):
+
+Lin Chen was responsible for the application layer and user-facing interface, including:
+
+1. Implementing the FastAPI backend (app.py) for serving different system modes (baseline, RAG, responsible pipeline, ethics-off).
+
+2. Developing the web frontend UI (HTML/JS) for interactive queries and visualization of model outputs.
+
+3. Integrating the backend pipeline with the frontend interface.
+
+4. Conducting the demo recording, showcasing system behavior under different modes.
+
+5. Writing documentation sections and assisting with debugging and system testing.
+
+Both members contributed equally to discussions, system design decisions, and final polishing of the project.
