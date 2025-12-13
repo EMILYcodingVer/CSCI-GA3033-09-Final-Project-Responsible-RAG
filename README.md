@@ -63,26 +63,7 @@ Open: `http://127.0.0.1:8000`
 3. Click **ASK** to generate outputs.
 4. Compare: evidence visibility, risk clarity, and actionability.
 
-## 5) Reproducible experiment (script)
-We provide a script to reproduce the **same-input / same-parameter** comparison and export results as JSON for reporting.
-
-```bash
-python scripts/run_experiment_loan_approval.py \
-  --out outputs/loan_approval_run.json
-```
-
-This produces:
-- Mode outputs (Baseline/RAG/Responsible)
-- A lightweight set of **trust metrics** (source verifiability, risk visibility, actionability, user-confidence proxy)
-
-## 6) Tests
-This project includes unit tests focused on **non-network** behavior. API calls are mocked.
-
-```bash
-pytest -q
-```
-
-## 7) Troubleshooting
+## 5) Troubleshooting
 - **`OPENAI_API_KEY` not found**: ensure `.env` exists and contains a valid key.
 - **Port already in use**: change the port, e.g. `--port 8080`.
 - **RAG returns weak evidence**: add/curate documents in `documents/` (RAG is only as strong as the corpus).
