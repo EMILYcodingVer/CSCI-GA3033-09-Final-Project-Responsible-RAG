@@ -49,32 +49,7 @@ Observe:
 - whether the final answer is rewritten safely (`Safe Final Answer`)
 - optional structured reasoning (`Planner` collapsible)
 
-## 4) Reproduce experiment results (script)
-
-Run the same scenario from the command line and save outputs to JSON for reporting.
-
-```bash
-python scripts/experiment_loan_approval.py \
-  --out outputs/loan_approval_results.json
-```
-
-This script:
-
-- runs BASELINE vs RAG vs RESPONSIBLE
-- stores answers and intermediate artifacts
-- computes lightweight *trust metrics* used in the report (verifiability / risk visibility / actionability)
-
-## 5) Unit tests
-
-Recommended:
-
-```bash
-pytest -q
-```
-
-The tests mock LLM calls, so they are deterministic and do not spend tokens.
-
-## 6) Troubleshooting
+## 4) Troubleshooting
 
 ### A) `OPENAI_API_KEY` not found
 
